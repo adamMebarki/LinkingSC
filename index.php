@@ -13,7 +13,7 @@
     </p>
     <?php
 
-        include ("scripts/dbconnect.php");
+        include ("scripts/db_connect.php");
         /**
          * Created by PhpStorm.
          * User: 1606149
