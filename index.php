@@ -6,7 +6,7 @@
     </head>
     <body>
     <p>
-        <br><h1>LAB Session qnd Cookies</h1><br>
+        <br><h1>Lab Linking Server Client</h1><br>
     <?php
     print "Bouyachaka";
     ?>
@@ -32,7 +32,7 @@
         $query  = "SELECT * FROM markers WHERE 1";
         $result = $db->query($query);
         if(!$result){
-            die('Nothing in result');
+            die('Nothing in result: ');
         }
 
         header("Content-type: text/html");
@@ -49,8 +49,13 @@
             $newnode->setAttribute("lng",$row['lng']);
             $newnode->setAttribute("type",$row['type']);
         }
+        $result->close();
+        $db->close();
 
         echo $dom->saveXML();
+
+
+
 
     ?>
 
