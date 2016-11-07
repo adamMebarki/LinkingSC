@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PHP/MYSQL & Google Maps Example</title>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf7897Vvv1qEQidZdzbF9zq_lfadpnlJc"
+                type="text/JavaScript"></script>
+
+        <script type="text/Javascript">
+            function load(){
+                var map = new google.maps.Map(document.getElementById("map"),
+                        {center: new google.maps.LatLng(47.6145, -122.3418),
+                        zoom: 13,
+                        mapTypeId:'roadmap'
+                        });
+
+            }
+        </script>
+
+    </head>
+    <body onload="load()">
+        <br><h1>Map Page of Bouyachaka</h1><br>
+        <?php
+            print "Bouyachaka";
+        ?>
+
+    <div id="map" style="width: 500px; height: 300px">
+
+    </div>
+
+    <ul>
+        <li><a href="mapPage.html">Return of the Bouyachaka Page></a></li>
+    </ul>
+
+    </body>
+</html>
