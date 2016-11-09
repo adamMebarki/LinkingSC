@@ -39,5 +39,5 @@ $result->close();
 $db->close();
 
 echo $dom->saveXML();
-
 //api google key :  AIzaSyBf7897Vvv1qEQidZdzbF9zq_lfadpnlJc
+?>
